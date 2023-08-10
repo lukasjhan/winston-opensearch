@@ -1,0 +1,77 @@
+{
+  "name": "winston-opensearch",
+  "version": "0.1.0",
+  "description": "An Opensearch transport for winston",
+  "main": "index",
+  "authors": [
+    {
+      "name": "Jacques-Olivier D. Bernier",
+      "url": "https://github.com/jackdbernier"
+    },
+    {
+      "name": "Thomas Hoppe",
+      "url": "https://github.com/vanthome",
+      "email": "thomas.hoppe@n-fuse.co"
+    },
+    {
+      "name": "Lukas J Han",
+      "url": "https://github.com/lukasjhan",
+      "email": "lukas.j.han@gmail.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Andy Potanin",
+      "url": "https://github.com/andypotanin"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukasjhan/winston-opensearch.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "logging",
+    "winston",
+    "opensearch",
+    "transport",
+    "logstash"
+  ],
+  "dependencies": {
+    "@opensearch-project/opensearch": "^2.3.1",
+    "dayjs": "^1.11.7",
+    "debug": "^4.3.4",
+    "lodash.defaults": "^4.2.0",
+    "lodash.omit": "^4.5.0",
+    "promise": "^8.3.0",
+    "retry": "^0.13.1",
+    "winston": "^3.8.2",
+    "winston-transport": "^4.5.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-json": "^3.1.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3"
+  },
+  "scripts": {
+    "test": "nyc mocha",
+    "lint": "eslint *.json *.js",
+    "mocha": "mocha --full-trace./test/* -- --trace-warnings",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
+  }
+}
