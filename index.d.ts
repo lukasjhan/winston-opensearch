@@ -35,6 +35,7 @@ export interface OpensearchTransportOptions extends TransportStream.TransportStr
   healthCheckWaitForNodes?: string;
   source?: string;
   retryLimit?: number;
+  dataStream?: boolean;
 }
 
 export class OpensearchTransport extends TransportStream {
