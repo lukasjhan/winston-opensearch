@@ -61,6 +61,7 @@ If multiple objects are provided as arguments, the contents are stringified.
   `ensureIndexTemplate` is `true` and `indexTemplate` is `undefined`
 - `flushInterval` [`2000`] Time span between bulk writes in ms.
 - `retryLimit` [`400`] Number of retries to connect to ES before giving up.
+- `dataStream` dataStream [false] Use Opensearch datastreams.
 - `healthCheckTimeout` [`30s`] Timeout for one health check (health checks will be retried forever).
 - `healthCheckWaitForStatus` [`yellow`] Status to wait for when check upon health. See [its API docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html) for supported options.
 - `healthCheckWaitForNodes` [`>=1`] Nodes to wait for when check upon health. See [its API docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html) for supported options.
